@@ -1,0 +1,16 @@
+{
+  "name": "conversational-commerce",
+  "version": "1.0.0",
+  "description": "AI agent to assist customers with order status inquiries.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "test"
+  },
+  "author": "https://github.com/FeelHippo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.6.0",
+    "openai": "^5.8.0"
+  }
+}
