@@ -73,6 +73,11 @@ export class OpenAIAgent {
             }
         );
         const body = await response.json();
+
+        if (!body.data.order) {
+            return;
+        }
+
         return Object
             .entries(body.data.order)
             .reduce(
@@ -103,6 +108,10 @@ export class OpenAIAgent {
             const functionArgs = JSON.parse(message.tool_calls[0].function.arguments);
             const functionArgsArr = Object.values(functionArgs);
             const functionResponse = await this.queryOrder.apply(null, functionArgsArr);
+
+            if (!functionResponse) {
+                return;
+            }
 
             const response = await openai.chat.completions.create({
                 model: 'gpt-4',

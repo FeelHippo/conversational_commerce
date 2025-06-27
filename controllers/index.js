@@ -4,6 +4,6 @@ export const queryAgent = async (body, res, query) => {
     res.writeHead(200, { 'Content-Type': 'application/json' });
     res.end(JSON.stringify(answer));
   } catch (error) {
-    console.error(error);
+    res.end();
   }
 };

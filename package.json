@@ -4,13 +4,13 @@
   "description": "AI agent to assist customers with order status inquiries.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "test"
+    "start": "nodemon ./server.js localhost 8080"
   },
   "author": "https://github.com/FeelHippo",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.6.0",
+    "nodemon": "^3.1.10",
     "openai": "^5.8.0"
   }
 }
