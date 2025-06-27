@@ -3,6 +3,7 @@ require('dotenv').config()
 const http = require('http');
 const createContainer = require('./inversion_of_control/dependency_injection');
 const { queryAgent } = require('./controllers');
+const { bodyParser } = require('./utils/body_parser.js');
 
 http.createServer(async (req, res) => {
 
@@ -10,10 +11,14 @@ http.createServer(async (req, res) => {
 
   const { method } = req;
   switch(method) {
-    case 'GET':
-      await queryAgent(req, res, Agent.query);
+    case 'POST':
+      await queryAgent(
+        JSON.parse(await bodyParser(req)),
+        res,
+        Agent.query,
+      );
       break;
     default:
       console.log('Method not recognized');
   }
-}).listen(3003, () => console.log('Server running on port 3000'));
+}).listen(8080, () => console.log('Server running on port 8080'));

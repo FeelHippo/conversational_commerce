@@ -1,0 +1,4700 @@
+{
+  "data": {
+    "__schema": {
+      "types": [
+        {
+          "name": "__Schema"
+        },
+        {
+          "name": "__Type"
+        },
+        {
+          "name": "__TypeKind"
+        },
+        {
+          "name": "__Field"
+        },
+        {
+          "name": "__InputValue"
+        },
+        {
+          "name": "__EnumValue"
+        },
+        {
+          "name": "__Directive"
+        },
+        {
+          "name": "__DirectiveLocation"
+        },
+        {
+          "name": "Int"
+        },
+        {
+          "name": "Float"
+        },
+        {
+          "name": "String"
+        },
+        {
+          "name": "Boolean"
+        },
+        {
+          "name": "ID"
+        },
+        {
+          "name": "Account"
+        },
+        {
+          "name": "AddGiftCardToCartPayload"
+        },
+        {
+          "name": "Address"
+        },
+        {
+          "name": "AddressAttributesType"
+        },
+        {
+          "name": "AgeGroup"
+        },
+        {
+          "name": "AnimationBlock"
+        },
+        {
+          "name": "ApplyPromotionMutation"
+        },
+        {
+          "name": "AuthorizeApplePayMerchantPayload"
+        },
+        {
+          "name": "Backorder"
+        },
+        {
+          "name": "BaseErrorGQL"
+        },
+        {
+          "name": "BillingInfo"
+        },
+        {
+          "name": "BillingSubscriptionPlan"
+        },
+        {
+          "name": "BlockCampaign"
+        },
+        {
+          "name": "BlockCampaignUnion"
+        },
+        {
+          "name": "BlockColor"
+        },
+        {
+          "name": "BlockColorUnion"
+        },
+        {
+          "name": "BlockEntry"
+        },
+        {
+          "name": "BlockLayout"
+        },
+        {
+          "name": "BlockUnion"
+        },
+        {
+          "name": "Button"
+        },
+        {
+          "name": "Campaign"
+        },
+        {
+          "name": "CampaignIds"
+        },
+        {
+          "name": "CancelOrderPayload"
+        },
+        {
+          "name": "CancelSubscriptionPayload"
+        },
+        {
+          "name": "CareInstruction"
+        },
+        {
+          "name": "Checkout"
+        },
+        {
+          "name": "CheckoutAsGuestPayload"
+        },
+        {
+          "name": "CompleteCurrentOrderPayload"
+        },
+        {
+          "name": "ContactReason"
+        },
+        {
+          "name": "Contentful__Any"
+        },
+        {
+          "name": "Contentful__Entity"
+        },
+        {
+          "name": "Contentful__FieldSet"
+        },
+        {
+          "name": "Contentful__Node"
+        },
+        {
+          "name": "Contentful__Service"
+        },
+        {
+          "name": "Contentful_Accordion"
+        },
+        {
+          "name": "Contentful_AccordionBlocksCollection"
+        },
+        {
+          "name": "Contentful_AccordionBlocksFilter"
+        },
+        {
+          "name": "Contentful_AccordionBlocksItem"
+        },
+        {
+          "name": "Contentful_AccordionCollection"
+        },
+        {
+          "name": "Contentful_AccordionFilter"
+        },
+        {
+          "name": "Contentful_AccordionLinkingCollections"
+        },
+        {
+          "name": "Contentful_AccordionLinkingCollectionsBlockAccordionListCollectionOrder"
+        },
+        {
+          "name": "Contentful_AccordionLinkingCollectionsContactReasonCollectionOrder"
+        },
+        {
+          "name": "Contentful_AccordionLinkingCollectionsContextualFaqCollectionOrder"
+        },
+        {
+          "name": "Contentful_AccordionOrder"
+        },
+        {
+          "name": "Contentful_Animation"
+        },
+        {
+          "name": "Contentful_AnimationCollection"
+        },
+        {
+          "name": "Contentful_AnimationFilter"
+        },
+        {
+          "name": "Contentful_AnimationLinkingCollections"
+        },
+        {
+          "name": "Contentful_AnimationLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_AnimationOrder"
+        },
+        {
+          "name": "Contentful_Asset"
+        },
+        {
+          "name": "Contentful_AssetCollection"
+        },
+        {
+          "name": "Contentful_AssetFilter"
+        },
+        {
+          "name": "Contentful_AssetLinkingCollections"
+        },
+        {
+          "name": "Contentful_AssetOrder"
+        },
+        {
+          "name": "Contentful_AtmosphericVideo"
+        },
+        {
+          "name": "Contentful_AtmosphericVideoCollection"
+        },
+        {
+          "name": "Contentful_AtmosphericVideoFilter"
+        },
+        {
+          "name": "Contentful_AtmosphericVideoLinkingCollections"
+        },
+        {
+          "name": "Contentful_AtmosphericVideoOrder"
+        },
+        {
+          "name": "Contentful_BlockAccordionList"
+        },
+        {
+          "name": "Contentful_BlockAccordionListBlocksCollection"
+        },
+        {
+          "name": "Contentful_BlockAccordionListBlocksCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAccordionListCollection"
+        },
+        {
+          "name": "Contentful_BlockAccordionListFilter"
+        },
+        {
+          "name": "Contentful_BlockAccordionListLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockAccordionListLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAccordionListLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAccordionListLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAccordionListLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAccordionListLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAccordionListLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAccordionListOrder"
+        },
+        {
+          "name": "Contentful_BlockAnchorNavigation"
+        },
+        {
+          "name": "Contentful_BlockAnchorNavigationCollection"
+        },
+        {
+          "name": "Contentful_BlockAnchorNavigationFilter"
+        },
+        {
+          "name": "Contentful_BlockAnchorNavigationLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockAnchorNavigationLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAnchorNavigationLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAnchorNavigationLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAnchorNavigationLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAnchorNavigationLinksCollection"
+        },
+        {
+          "name": "Contentful_BlockAnchorNavigationLinksCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAnchorNavigationOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideo"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoCollection"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoFilter"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsBlockBillboardCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsBlockExperimentCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsBlockLayoutCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsBlockMediaCarouselCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsBlockReelsCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsBlockStandardVideoCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsBlockTriggerCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsEditorialCardCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsEndorsementCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsGridBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsHighlightCardCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsHubItemCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsLookCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsMediaBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsPromoCardCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoLinkingCollectionsReelCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockAtmosphericVideoOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboard"
+        },
+        {
+          "name": "Contentful_BlockBillboardCollection"
+        },
+        {
+          "name": "Contentful_BlockBillboardCtasCollection"
+        },
+        {
+          "name": "Contentful_BlockBillboardCtasCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardFilter"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsBlockExperimentCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsBlockShopTheLookCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsChapterCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsNameCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBillboardMedia"
+        },
+        {
+          "name": "Contentful_BlockBillboardNt_experiencesCollection"
+        },
+        {
+          "name": "Contentful_BlockBillboardOrder"
+        },
+        {
+          "name": "Contentful_BlockBlockGallery"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryBlocksCollection"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryBlocksCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryCollection"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryFilter"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBlockGalleryOrder"
+        },
+        {
+          "name": "Contentful_BlockBook"
+        },
+        {
+          "name": "Contentful_BlockBookChaptersCollection"
+        },
+        {
+          "name": "Contentful_BlockBookChaptersCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBookCollection"
+        },
+        {
+          "name": "Contentful_BlockBookFilter"
+        },
+        {
+          "name": "Contentful_BlockBookLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockBookLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockBookOrder"
+        },
+        {
+          "name": "Contentful_BlockChips"
+        },
+        {
+          "name": "Contentful_BlockChipsChipsCollection"
+        },
+        {
+          "name": "Contentful_BlockChipsChipsFilter"
+        },
+        {
+          "name": "Contentful_BlockChipsChipsItem"
+        },
+        {
+          "name": "Contentful_BlockChipsCollection"
+        },
+        {
+          "name": "Contentful_BlockChipsFilter"
+        },
+        {
+          "name": "Contentful_BlockChipsLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockChipsLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockChipsLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockChipsLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockChipsLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockChipsLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockChipsLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockChipsOrder"
+        },
+        {
+          "name": "Contentful_BlockColorBlock"
+        },
+        {
+          "name": "Contentful_BlockColorBlockBlocksCollection"
+        },
+        {
+          "name": "Contentful_BlockColorBlockBlocksFilter"
+        },
+        {
+          "name": "Contentful_BlockColorBlockBlocksItem"
+        },
+        {
+          "name": "Contentful_BlockColorBlockCollection"
+        },
+        {
+          "name": "Contentful_BlockColorBlockFilter"
+        },
+        {
+          "name": "Contentful_BlockColorBlockLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockColorBlockLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockColorBlockLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockColorBlockLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockColorBlockLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockColorBlockLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockColorBlockLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockColorBlockLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockColorBlockLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockColorBlockOrder"
+        },
+        {
+          "name": "Contentful_BlockContextualSignup"
+        },
+        {
+          "name": "Contentful_BlockContextualSignupCollection"
+        },
+        {
+          "name": "Contentful_BlockContextualSignupFilter"
+        },
+        {
+          "name": "Contentful_BlockContextualSignupLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockContextualSignupLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockContextualSignupLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockContextualSignupLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockContextualSignupLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockContextualSignupLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockContextualSignupLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockContextualSignupLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockContextualSignupOrder"
+        },
+        {
+          "name": "Contentful_BlockDyCampaign"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignBlocksCollection"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignBlocksFilter"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignBlocksItem"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignCollection"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignFallbackBlock"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignFilter"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockDyCampaignOrder"
+        },
+        {
+          "name": "Contentful_BlockEmbed"
+        },
+        {
+          "name": "Contentful_BlockEmbedCollection"
+        },
+        {
+          "name": "Contentful_BlockEmbedFilter"
+        },
+        {
+          "name": "Contentful_BlockEmbedLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockEmbedLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEmbedLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEmbedLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEmbedLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEmbedLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEmbedLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEmbedLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEmbedLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEmbedOrder"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarousel"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselCollection"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselEndorsementsCollection"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselEndorsementsCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselFilter"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockEndorsementCarouselOrder"
+        },
+        {
+          "name": "Contentful_BlockExperiment"
+        },
+        {
+          "name": "Contentful_BlockExperimentCollection"
+        },
+        {
+          "name": "Contentful_BlockExperimentFallbackBlock"
+        },
+        {
+          "name": "Contentful_BlockExperimentFilter"
+        },
+        {
+          "name": "Contentful_BlockExperimentLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockExperimentLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockExperimentLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockExperimentLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockExperimentOrder"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollection"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionCardsCollection"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionCardsFilter"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionCardsItem"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionCollection"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionFilter"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionLinkingCollectionsMicrositeLoewe25CollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockFeaturedCardCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockGrid"
+        },
+        {
+          "name": "Contentful_BlockGridBlocksCollection"
+        },
+        {
+          "name": "Contentful_BlockGridBlocksCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockGridCollection"
+        },
+        {
+          "name": "Contentful_BlockGridFilter"
+        },
+        {
+          "name": "Contentful_BlockGridLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockGridLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockGridLinkingCollectionsMicrositeLoewe25CollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockGridLinkingCollectionsMicrositeZendaya25CollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockGridLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockGridLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockGridLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockGridLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockGridLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockGridOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadline"
+        },
+        {
+          "name": "Contentful_BlockHeadlineCollection"
+        },
+        {
+          "name": "Contentful_BlockHeadlineCtasCollection"
+        },
+        {
+          "name": "Contentful_BlockHeadlineCtasCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineFilter"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsBlockAccordionListCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsBlockBillboardCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsBlockLayoutCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsBlockShortStoryCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsBlockTriggerCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsGridBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsMicrositeZendaya25CollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHeadlineOrder"
+        },
+        {
+          "name": "Contentful_BlockHighlightCards"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsCollection"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsFilter"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsHighlightsCollection"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsHighlightsCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHighlightCardsOrder"
+        },
+        {
+          "name": "Contentful_BlockHotspots"
+        },
+        {
+          "name": "Contentful_BlockHotspotsCollection"
+        },
+        {
+          "name": "Contentful_BlockHotspotsFilter"
+        },
+        {
+          "name": "Contentful_BlockHotspotsHotspotGroupsCollection"
+        },
+        {
+          "name": "Contentful_BlockHotspotsHotspotGroupsCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHotspotsLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockHotspotsLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHotspotsLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHotspotsLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHotspotsLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHotspotsLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHotspotsLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockHotspotsOrder"
+        },
+        {
+          "name": "Contentful_BlockImage"
+        },
+        {
+          "name": "Contentful_BlockImageCollection"
+        },
+        {
+          "name": "Contentful_BlockImageFilter"
+        },
+        {
+          "name": "Contentful_BlockImageLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockImageLinkingCollectionsAccordionCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockImageLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockImageLinkingCollectionsBlockLayoutCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockImageLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockImageLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockImageLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockImageLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockImageLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockImageLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockImageOrder"
+        },
+        {
+          "name": "Contentful_BlockInfoCards"
+        },
+        {
+          "name": "Contentful_BlockInfoCardsCollection"
+        },
+        {
+          "name": "Contentful_BlockInfoCardsFilter"
+        },
+        {
+          "name": "Contentful_BlockInfoCardsInfoCardsCollection"
+        },
+        {
+          "name": "Contentful_BlockInfoCardsInfoCardsCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockInfoCardsLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockInfoCardsLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockInfoCardsLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockInfoCardsLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockInfoCardsLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockInfoCardsOrder"
+        },
+        {
+          "name": "Contentful_BlockLayout"
+        },
+        {
+          "name": "Contentful_BlockLayoutBlocksCollection"
+        },
+        {
+          "name": "Contentful_BlockLayoutBlocksFilter"
+        },
+        {
+          "name": "Contentful_BlockLayoutBlocksItem"
+        },
+        {
+          "name": "Contentful_BlockLayoutCollection"
+        },
+        {
+          "name": "Contentful_BlockLayoutFilter"
+        },
+        {
+          "name": "Contentful_BlockLayoutLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockLayoutLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLayoutLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLayoutLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLayoutLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLayoutLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLayoutLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLayoutLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLayoutOrder"
+        },
+        {
+          "name": "Contentful_BlockLookBook"
+        },
+        {
+          "name": "Contentful_BlockLookBookCollection"
+        },
+        {
+          "name": "Contentful_BlockLookBookCtasCollection"
+        },
+        {
+          "name": "Contentful_BlockLookBookCtasCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLookBookFilter"
+        },
+        {
+          "name": "Contentful_BlockLookBookLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockLookBookLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLookBookLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLookBookLinkingCollectionsMicrositeLoewe25CollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLookBookLinkingCollectionsMicrositeZendaya25CollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLookBookLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLookBookLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLookBookLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLookBookLooksCollection"
+        },
+        {
+          "name": "Contentful_BlockLookBookLooksCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockLookBookOrder"
+        },
+        {
+          "name": "Contentful_BlockMap"
+        },
+        {
+          "name": "Contentful_BlockMapCollection"
+        },
+        {
+          "name": "Contentful_BlockMapFilter"
+        },
+        {
+          "name": "Contentful_BlockMapLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockMapLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMapLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMapLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMapLinkingCollectionsEventCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMapLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMapLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMapLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMapLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMapLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMapMarkersCollection"
+        },
+        {
+          "name": "Contentful_BlockMapMarkersCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMapOrder"
+        },
+        {
+          "name": "Contentful_BlockMediaCarousel"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselCollection"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselFilter"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselLinkingCollectionsBlockShortStoryCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselMediaItemsCollection"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselMediaItemsFilter"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselMediaItemsItem"
+        },
+        {
+          "name": "Contentful_BlockMediaCarouselOrder"
+        },
+        {
+          "name": "Contentful_BlockNavigationList"
+        },
+        {
+          "name": "Contentful_BlockNavigationListCollection"
+        },
+        {
+          "name": "Contentful_BlockNavigationListFilter"
+        },
+        {
+          "name": "Contentful_BlockNavigationListLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockNavigationListLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockNavigationListLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockNavigationListLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockNavigationListLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockNavigationListLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockNavigationListLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockNavigationListLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockNavigationListLinksCollection"
+        },
+        {
+          "name": "Contentful_BlockNavigationListLinksCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockNavigationListOrder"
+        },
+        {
+          "name": "Contentful_BlockProductResults"
+        },
+        {
+          "name": "Contentful_BlockProductResultsButtonsCollection"
+        },
+        {
+          "name": "Contentful_BlockProductResultsButtonsFilter"
+        },
+        {
+          "name": "Contentful_BlockProductResultsButtonsItem"
+        },
+        {
+          "name": "Contentful_BlockProductResultsCollection"
+        },
+        {
+          "name": "Contentful_BlockProductResultsFilter"
+        },
+        {
+          "name": "Contentful_BlockProductResultsLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockProductResultsLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockProductResultsLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockProductResultsLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockProductResultsLinkingCollectionsMicrositeLoewe25CollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockProductResultsLinkingCollectionsMicrositeZendaya25CollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockProductResultsLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockProductResultsLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockProductResultsLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockProductResultsLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockProductResultsLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockProductResultsOrder"
+        },
+        {
+          "name": "Contentful_BlockRecommendations"
+        },
+        {
+          "name": "Contentful_BlockRecommendationsCollection"
+        },
+        {
+          "name": "Contentful_BlockRecommendationsFilter"
+        },
+        {
+          "name": "Contentful_BlockRecommendationsLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockRecommendationsLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRecommendationsLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRecommendationsLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRecommendationsLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRecommendationsLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRecommendationsLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRecommendationsLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRecommendationsOrder"
+        },
+        {
+          "name": "Contentful_BlockReels"
+        },
+        {
+          "name": "Contentful_BlockReelsCollection"
+        },
+        {
+          "name": "Contentful_BlockReelsFilter"
+        },
+        {
+          "name": "Contentful_BlockReelsLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockReelsLinkingCollectionsMicrositeZendaya25CollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockReelsLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockReelsLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockReelsLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockReelsLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockReelsLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockReelsOrder"
+        },
+        {
+          "name": "Contentful_BlockReelsReelCollection"
+        },
+        {
+          "name": "Contentful_BlockReelsReelCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockReelsReelsCollection"
+        },
+        {
+          "name": "Contentful_BlockReelsReelsCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichText"
+        },
+        {
+          "name": "Contentful_BlockRichTextCollection"
+        },
+        {
+          "name": "Contentful_BlockRichTextContent"
+        },
+        {
+          "name": "Contentful_BlockRichTextContentAssets"
+        },
+        {
+          "name": "Contentful_BlockRichTextContentEntries"
+        },
+        {
+          "name": "Contentful_BlockRichTextContentLinks"
+        },
+        {
+          "name": "Contentful_BlockRichTextContentResources"
+        },
+        {
+          "name": "Contentful_BlockRichTextContentResourcesBlock"
+        },
+        {
+          "name": "Contentful_BlockRichTextContentResourcesHyperlink"
+        },
+        {
+          "name": "Contentful_BlockRichTextContentResourcesInline"
+        },
+        {
+          "name": "Contentful_BlockRichTextFilter"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollectionsAccordionCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollectionsBlockLayoutCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollectionsGridBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichTextLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockRichTextOrder"
+        },
+        {
+          "name": "Contentful_BlockSeoLinks"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksCollection"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksFilter"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksLinksCollection"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksLinksFilter"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksLinksItem"
+        },
+        {
+          "name": "Contentful_BlockSeoLinksOrder"
+        },
+        {
+          "name": "Contentful_BlockShopTheLook"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookCollection"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookFilter"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookLinkingCollectionsMicrositeLoewe25CollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookOrder"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookProductListCollection"
+        },
+        {
+          "name": "Contentful_BlockShopTheLookProductListCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShortStory"
+        },
+        {
+          "name": "Contentful_BlockShortStoryCollection"
+        },
+        {
+          "name": "Contentful_BlockShortStoryFilter"
+        },
+        {
+          "name": "Contentful_BlockShortStoryLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockShortStoryLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShortStoryLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShortStoryLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShortStoryLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShortStoryLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShortStoryLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShortStoryLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShortStoryLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockShortStoryOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideo"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoCollection"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoFilter"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsBlockBillboardCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsBlockLayoutCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsEndorsementCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsGridBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsMediaBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoOrder"
+        },
+        {
+          "name": "Contentful_BlockStandardVideoPoster"
+        },
+        {
+          "name": "Contentful_BlockStores"
+        },
+        {
+          "name": "Contentful_BlockStoresCollection"
+        },
+        {
+          "name": "Contentful_BlockStoresFilter"
+        },
+        {
+          "name": "Contentful_BlockStoresLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockStoresLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockStoresOrder"
+        },
+        {
+          "name": "Contentful_BlockTagGrid"
+        },
+        {
+          "name": "Contentful_BlockTagGridCollection"
+        },
+        {
+          "name": "Contentful_BlockTagGridFilter"
+        },
+        {
+          "name": "Contentful_BlockTagGridLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockTagGridLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTagGridLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTagGridLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTagGridLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTagGridLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTagGridLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTagGridLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTagGridLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTagGridOrder"
+        },
+        {
+          "name": "Contentful_BlockTrigger"
+        },
+        {
+          "name": "Contentful_BlockTriggerCollection"
+        },
+        {
+          "name": "Contentful_BlockTriggerFilter"
+        },
+        {
+          "name": "Contentful_BlockTriggerLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockTriggerLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTriggerLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTriggerLinkingCollectionsMicrositeZendaya25CollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTriggerLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTriggerLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTriggerLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTriggerLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockTriggerMedia"
+        },
+        {
+          "name": "Contentful_BlockTriggerOrder"
+        },
+        {
+          "name": "Contentful_BlockWayfinder"
+        },
+        {
+          "name": "Contentful_BlockWayfinderCollection"
+        },
+        {
+          "name": "Contentful_BlockWayfinderFilter"
+        },
+        {
+          "name": "Contentful_BlockWayfinderLinkingCollections"
+        },
+        {
+          "name": "Contentful_BlockWayfinderLinkingCollectionsBlockColorBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockWayfinderLinkingCollectionsBlockDyCampaignCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockWayfinderLinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_BlockWayfinderOrder"
+        },
+        {
+          "name": "Contentful_CategoryPage"
+        },
+        {
+          "name": "Contentful_CategoryPageBlocksCollection"
+        },
+        {
+          "name": "Contentful_CategoryPageBlocksFilter"
+        },
+        {
+          "name": "Contentful_CategoryPageBlocksItem"
+        },
+        {
+          "name": "Contentful_CategoryPageBreadcrumbsCollection"
+        },
+        {
+          "name": "Contentful_CategoryPageBreadcrumbsCollectionOrder"
+        },
+        {
+          "name": "Contentful_CategoryPageCollection"
+        },
+        {
+          "name": "Contentful_CategoryPageFilter"
+        },
+        {
+          "name": "Contentful_CategoryPageLinkingCollections"
+        },
+        {
+          "name": "Contentful_CategoryPageOrder"
+        },
+        {
+          "name": "Contentful_CategoryPageSeoParagraph"
+        },
+        {
+          "name": "Contentful_CategoryPageSeoParagraphAssets"
+        },
+        {
+          "name": "Contentful_CategoryPageSeoParagraphEntries"
+        },
+        {
+          "name": "Contentful_CategoryPageSeoParagraphLinks"
+        },
+        {
+          "name": "Contentful_CategoryPageSeoParagraphResources"
+        },
+        {
+          "name": "Contentful_CategoryPageSeoParagraphResourcesBlock"
+        },
+        {
+          "name": "Contentful_CategoryPageSeoParagraphResourcesHyperlink"
+        },
+        {
+          "name": "Contentful_CategoryPageSeoParagraphResourcesInline"
+        },
+        {
+          "name": "Contentful_CategoryPageSubnavigationCollection"
+        },
+        {
+          "name": "Contentful_CategoryPageSubnavigationFilter"
+        },
+        {
+          "name": "Contentful_CategoryPageSubnavigationItem"
+        },
+        {
+          "name": "Contentful_cfAccordionNestedFilter"
+        },
+        {
+          "name": "Contentful_cfAnimationNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockAtmosphericVideoNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockBillboardNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockFeaturedCardCollectionNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockGridNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockHeadlineNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockLookBookNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockMapNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockMediaCarouselNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockProductResultsNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockReelsNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockRichTextNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockSeoLinksNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockShopTheLookNestedFilter"
+        },
+        {
+          "name": "Contentful_cfblocksMultiTypeNestedFilter"
+        },
+        {
+          "name": "Contentful_cfBlockTriggerNestedFilter"
+        },
+        {
+          "name": "Contentful_cfbreadcrumbsMultiTypeNestedFilter"
+        },
+        {
+          "name": "Contentful_cfbuttonsMultiTypeNestedFilter"
+        },
+        {
+          "name": "Contentful_cfcardsMultiTypeNestedFilter"
+        },
+        {
+          "name": "Contentful_cfChapterNestedFilter"
+        },
+        {
+          "name": "Contentful_cfchipsMultiTypeNestedFilter"
+        },
+        {
+          "name": "Contentful_cfContactChannelNestedFilter"
+        },
+        {
+          "name": "Contentful_cfContactReasonNestedFilter"
+        },
+        {
+          "name": "Contentful_cfcontentMultiTypeNestedFilter"
+        },
+        {
+          "name": "Contentful_cfCustomerServiceContactNestedFilter"
+        },
+        {
+          "name": "Contentful_cfEndorsementNestedFilter"
+        },
+        {
+          "name": "Contentful_cfEnrichedAssetNestedFilter"
+        },
+        {
+          "name": "Contentful_cfEnrichedLinkNestedFilter"
+        },
+        {
+          "name": "Contentful_cfGridBlockNestedFilter"
+        },
+        {
+          "name": "Contentful_cfHighlightCardNestedFilter"
+        },
+        {
+          "name": "Contentful_cfHotspotGroupNestedFilter"
+        },
+        {
+          "name": "Contentful_cfHotspotNestedFilter"
+        },
+        {
+          "name": "Contentful_cfInfoCardNestedFilter"
+        },
+        {
+          "name": "Contentful_cfLinkNodeNestedFilter"
+        },
+        {
+          "name": "Contentful_cflinksMultiTypeNestedFilter"
+        },
+        {
+          "name": "Contentful_cfLookNestedFilter"
+        },
+        {
+          "name": "Contentful_cfMapMarkerNestedFilter"
+        },
+        {
+          "name": "Contentful_cfMediaBlockNestedFilter"
+        },
+        {
+          "name": "Contentful_cfmediaItemsMultiTypeNestedFilter"
+        },
+        {
+          "name": "Contentful_cfNewsletterSignupNestedFilter"
+        },
+        {
+          "name": "Contentful_cfPageStoryPageNestedFilter"
+        },
+        {
+          "name": "Contentful_cfPersonNestedFilter"
+        },
+        {
+          "name": "Contentful_cfPhotoshootModelNestedFilter"
+        },
+        {
+          "name": "Contentful_cfProductNestedFilter"
+        },
+        {
+          "name": "Contentful_cfProductPlanetNestedFilter"
+        },
+        {
+          "name": "Contentful_cfProductStyleNestedFilter"
+        },
+        {
+          "name": "Contentful_cfPromoCardButtonNestedFilter"
+        },
+        {
+          "name": "Contentful_cfReelNestedFilter"
+        },
+        {
+          "name": "Contentful_cfSeoNestedFilter"
+        },
+        {
+          "name": "Contentful_cfSizeChartNestedFilter"
+        },
+        {
+          "name": "Contentful_cfsubnavigationMultiTypeNestedFilter"
+        },
+        {
+          "name": "Contentful_cfTagNestedFilter"
+        },
+        {
+          "name": "Contentful_cfVariantContainerNestedFilter"
+        },
+        {
+          "name": "Contentful_cfVideoNestedFilter"
+        },
+        {
+          "name": "Contentful_cfWayfinderQuestionNestedFilter"
+        },
+        {
+          "name": "Contentful_Chapter"
+        },
+        {
+          "name": "Contentful_ChapterCollection"
+        },
+        {
+          "name": "Contentful_ChapterFilter"
+        },
+        {
+          "name": "Contentful_ChapterLinkingCollections"
+        },
+        {
+          "name": "Contentful_ChapterLinkingCollectionsBlockBookCollectionOrder"
+        },
+        {
+          "name": "Contentful_ChapterOrder"
+        },
+        {
+          "name": "Contentful_ChapterPage"
+        },
+        {
+          "name": "Contentful_Circle"
+        },
+        {
+          "name": "Contentful_ContactChannel"
+        },
+        {
+          "name": "Contentful_ContactChannelCollection"
+        },
+        {
+          "name": "Contentful_ContactChannelFilter"
+        },
+        {
+          "name": "Contentful_ContactChannelLinkingCollections"
+        },
+        {
+          "name": "Contentful_ContactChannelLinkingCollectionsContactReasonCollectionOrder"
+        },
+        {
+          "name": "Contentful_ContactChannelOrder"
+        },
+        {
+          "name": "Contentful_ContactReason"
+        },
+        {
+          "name": "Contentful_ContactReasonCollection"
+        },
+        {
+          "name": "Contentful_ContactReasonContactChannelsCollection"
+        },
+        {
+          "name": "Contentful_ContactReasonContactChannelsCollectionOrder"
+        },
+        {
+          "name": "Contentful_ContactReasonContextualFaqsCollection"
+        },
+        {
+          "name": "Contentful_ContactReasonContextualFaqsCollectionOrder"
+        },
+        {
+          "name": "Contentful_ContactReasonFilter"
+        },
+        {
+          "name": "Contentful_ContactReasonLinkingCollections"
+        },
+        {
+          "name": "Contentful_ContactReasonLinkingCollectionsContactTopicOfInquiryCollectionOrder"
+        },
+        {
+          "name": "Contentful_ContactReasonOrder"
+        },
+        {
+          "name": "Contentful_ContactReasonRecommendedContactChannelsCollection"
+        },
+        {
+          "name": "Contentful_ContactReasonRecommendedContactChannelsCollectionOrder"
+        },
+        {
+          "name": "Contentful_ContactTopicOfInquiry"
+        },
+        {
+          "name": "Contentful_ContactTopicOfInquiryCollection"
+        },
+        {
+          "name": "Contentful_ContactTopicOfInquiryContactReasonsCollection"
+        },
+        {
+          "name": "Contentful_ContactTopicOfInquiryContactReasonsCollectionOrder"
+        },
+        {
+          "name": "Contentful_ContactTopicOfInquiryFilter"
+        },
+        {
+          "name": "Contentful_ContactTopicOfInquiryLinkingCollections"
+        },
+        {
+          "name": "Contentful_ContactTopicOfInquiryOrder"
+        },
+        {
+          "name": "Contentful_ContentfulMetadata"
+        },
+        {
+          "name": "Contentful_ContentfulMetadataConceptsDescendantsFilter"
+        },
+        {
+          "name": "Contentful_ContentfulMetadataConceptsFilter"
+        },
+        {
+          "name": "Contentful_ContentfulMetadataFilter"
+        },
+        {
+          "name": "Contentful_ContentfulMetadataTagsFilter"
+        },
+        {
+          "name": "Contentful_ContentfulTag"
+        },
+        {
+          "name": "Contentful_ContextualFaq"
+        },
+        {
+          "name": "Contentful_ContextualFaqCollection"
+        },
+        {
+          "name": "Contentful_ContextualFaqFaqsCollection"
+        },
+        {
+          "name": "Contentful_ContextualFaqFaqsCollectionOrder"
+        },
+        {
+          "name": "Contentful_ContextualFaqFilter"
+        },
+        {
+          "name": "Contentful_ContextualFaqLinkingCollections"
+        },
+        {
+          "name": "Contentful_ContextualFaqOrder"
+        },
+        {
+          "name": "Contentful_Copy"
+        },
+        {
+          "name": "Contentful_CopyCollection"
+        },
+        {
+          "name": "Contentful_CopyFilter"
+        },
+        {
+          "name": "Contentful_CopyJson"
+        },
+        {
+          "name": "Contentful_CopyJsonCollection"
+        },
+        {
+          "name": "Contentful_CopyJsonFilter"
+        },
+        {
+          "name": "Contentful_CopyJsonLinkingCollections"
+        },
+        {
+          "name": "Contentful_CopyJsonOrder"
+        },
+        {
+          "name": "Contentful_CopyLinkingCollections"
+        },
+        {
+          "name": "Contentful_CopyOrder"
+        },
+        {
+          "name": "Contentful_CopyRichText"
+        },
+        {
+          "name": "Contentful_CopyRichTextCollection"
+        },
+        {
+          "name": "Contentful_CopyRichTextFewRichText"
+        },
+        {
+          "name": "Contentful_CopyRichTextFewRichTextAssets"
+        },
+        {
+          "name": "Contentful_CopyRichTextFewRichTextEntries"
+        },
+        {
+          "name": "Contentful_CopyRichTextFewRichTextLinks"
+        },
+        {
+          "name": "Contentful_CopyRichTextFewRichTextResources"
+        },
+        {
+          "name": "Contentful_CopyRichTextFewRichTextResourcesBlock"
+        },
+        {
+          "name": "Contentful_CopyRichTextFewRichTextResourcesHyperlink"
+        },
+        {
+          "name": "Contentful_CopyRichTextFewRichTextResourcesInline"
+        },
+        {
+          "name": "Contentful_CopyRichTextFilter"
+        },
+        {
+          "name": "Contentful_CopyRichTextLinkingCollections"
+        },
+        {
+          "name": "Contentful_CopyRichTextManyRichText"
+        },
+        {
+          "name": "Contentful_CopyRichTextManyRichTextAssets"
+        },
+        {
+          "name": "Contentful_CopyRichTextManyRichTextEntries"
+        },
+        {
+          "name": "Contentful_CopyRichTextManyRichTextLinks"
+        },
+        {
+          "name": "Contentful_CopyRichTextManyRichTextResources"
+        },
+        {
+          "name": "Contentful_CopyRichTextManyRichTextResourcesBlock"
+        },
+        {
+          "name": "Contentful_CopyRichTextManyRichTextResourcesHyperlink"
+        },
+        {
+          "name": "Contentful_CopyRichTextManyRichTextResourcesInline"
+        },
+        {
+          "name": "Contentful_CopyRichTextOrder"
+        },
+        {
+          "name": "Contentful_CopyRichTextOtherRichText"
+        },
+        {
+          "name": "Contentful_CopyRichTextOtherRichTextAssets"
+        },
+        {
+          "name": "Contentful_CopyRichTextOtherRichTextEntries"
+        },
+        {
+          "name": "Contentful_CopyRichTextOtherRichTextLinks"
+        },
+        {
+          "name": "Contentful_CopyRichTextOtherRichTextResources"
+        },
+        {
+          "name": "Contentful_CopyRichTextOtherRichTextResourcesBlock"
+        },
+        {
+          "name": "Contentful_CopyRichTextOtherRichTextResourcesHyperlink"
+        },
+        {
+          "name": "Contentful_CopyRichTextOtherRichTextResourcesInline"
+        },
+        {
+          "name": "Contentful_CopyRichTextValueRichText"
+        },
+        {
+          "name": "Contentful_CopyRichTextValueRichTextAssets"
+        },
+        {
+          "name": "Contentful_CopyRichTextValueRichTextEntries"
+        },
+        {
+          "name": "Contentful_CopyRichTextValueRichTextLinks"
+        },
+        {
+          "name": "Contentful_CopyRichTextValueRichTextResources"
+        },
+        {
+          "name": "Contentful_CopyRichTextValueRichTextResourcesBlock"
+        },
+        {
+          "name": "Contentful_CopyRichTextValueRichTextResourcesHyperlink"
+        },
+        {
+          "name": "Contentful_CopyRichTextValueRichTextResourcesInline"
+        },
+        {
+          "name": "Contentful_CopyRichTextZeroRichText"
+        },
+        {
+          "name": "Contentful_CopyRichTextZeroRichTextAssets"
+        },
+        {
+          "name": "Contentful_CopyRichTextZeroRichTextEntries"
+        },
+        {
+          "name": "Contentful_CopyRichTextZeroRichTextLinks"
+        },
+        {
+          "name": "Contentful_CopyRichTextZeroRichTextResources"
+        },
+        {
+          "name": "Contentful_CopyRichTextZeroRichTextResourcesBlock"
+        },
+        {
+          "name": "Contentful_CopyRichTextZeroRichTextResourcesHyperlink"
+        },
+        {
+          "name": "Contentful_CopyRichTextZeroRichTextResourcesInline"
+        },
+        {
+          "name": "Contentful_CustomerServiceContact"
+        },
+        {
+          "name": "Contentful_CustomerServiceContactCollection"
+        },
+        {
+          "name": "Contentful_CustomerServiceContactFilter"
+        },
+        {
+          "name": "Contentful_CustomerServiceContactLinkingCollections"
+        },
+        {
+          "name": "Contentful_CustomerServiceContactLinkingCollectionsStoreDataCollectionOrder"
+        },
+        {
+          "name": "Contentful_CustomerServiceContactOrder"
+        },
+        {
+          "name": "Contentful_Dimension"
+        },
+        {
+          "name": "Contentful_DyContent"
+        },
+        {
+          "name": "Contentful_DyContentBlocksCollection"
+        },
+        {
+          "name": "Contentful_DyContentBlocksFilter"
+        },
+        {
+          "name": "Contentful_DyContentBlocksItem"
+        },
+        {
+          "name": "Contentful_DyContentCollection"
+        },
+        {
+          "name": "Contentful_DyContentFilter"
+        },
+        {
+          "name": "Contentful_DyContentLinkingCollections"
+        },
+        {
+          "name": "Contentful_DyContentLinkingCollectionsBlockFeaturedCardCollectionCollectionOrder"
+        },
+        {
+          "name": "Contentful_DyContentOrder"
+        },
+        {
+          "name": "Contentful_EditorialCard"
+        },
+        {
+          "name": "Contentful_EditorialCardAsset"
+        },
+        {
+          "name": "Contentful_EditorialCardCollection"
+        },
+        {
+          "name": "Contentful_EditorialCardFilter"
+        },
+        {
+          "name": "Contentful_EditorialCardLinkingCollections"
+        },
+        {
+          "name": "Contentful_EditorialCardLinkingCollectionsBlockFeaturedCardCollectionCollectionOrder"
+        },
+        {
+          "name": "Contentful_EditorialCardLinkingCollectionsBlockMediaCarouselCollectionOrder"
+        },
+        {
+          "name": "Contentful_EditorialCardLinkingCollectionsDyContentCollectionOrder"
+        },
+        {
+          "name": "Contentful_EditorialCardLinkingCollectionsGridBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_EditorialCardOrder"
+        },
+        {
+          "name": "Contentful_Endorsement"
+        },
+        {
+          "name": "Contentful_EndorsementCollection"
+        },
+        {
+          "name": "Contentful_EndorsementFilter"
+        },
+        {
+          "name": "Contentful_EndorsementLinkingCollections"
+        },
+        {
+          "name": "Contentful_EndorsementLinkingCollectionsBlockEndorsementCarouselCollectionOrder"
+        },
+        {
+          "name": "Contentful_EndorsementMedia"
+        },
+        {
+          "name": "Contentful_EndorsementOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAsset"
+        },
+        {
+          "name": "Contentful_EnrichedAssetCollection"
+        },
+        {
+          "name": "Contentful_EnrichedAssetFilter"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollections"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsBlockBillboardCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsBlockContextualSignupCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsBlockImageCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsBlockMediaCarouselCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsBlockShortStoryCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsBlockStandardVideoCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsBlockTriggerCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsEditorialCardCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsEndorsementCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsEnrichedLinkCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsEventCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsGridBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsHighlightCardCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsHotspotGroupCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsHubItemCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsLookCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsMediaBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsMicrositeZendaya25CollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsNewsletterSignupCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsPersonCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsPhotoshootModelCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsProductCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsProductPlanetCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsPromoCardCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetLinkingCollectionsReelCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedAssetOrder"
+        },
+        {
+          "name": "Contentful_EnrichedLink"
+        },
+        {
+          "name": "Contentful_EnrichedLinkCollection"
+        },
+        {
+          "name": "Contentful_EnrichedLinkFilter"
+        },
+        {
+          "name": "Contentful_EnrichedLinkLinkingCollections"
+        },
+        {
+          "name": "Contentful_EnrichedLinkLinkingCollectionsBlockAnchorNavigationCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedLinkLinkingCollectionsBlockNavigationListCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedLinkLinkingCollectionsHubItemCollectionOrder"
+        },
+        {
+          "name": "Contentful_EnrichedLinkOrder"
+        },
+        {
+          "name": "Contentful_Entry"
+        },
+        {
+          "name": "Contentful_EntryCollection"
+        },
+        {
+          "name": "Contentful_EntryFilter"
+        },
+        {
+          "name": "Contentful_EntryOrder"
+        },
+        {
+          "name": "Contentful_Event"
+        },
+        {
+          "name": "Contentful_EventAssetCollection"
+        },
+        {
+          "name": "Contentful_EventAssetCollectionOrder"
+        },
+        {
+          "name": "Contentful_EventCollection"
+        },
+        {
+          "name": "Contentful_EventFilter"
+        },
+        {
+          "name": "Contentful_EventLinkingCollections"
+        },
+        {
+          "name": "Contentful_EventLinkingCollectionsHubItemCollectionOrder"
+        },
+        {
+          "name": "Contentful_EventOrder"
+        },
+        {
+          "name": "Contentful_ExperimentResponse"
+        },
+        {
+          "name": "Contentful_ExperimentResponseCollection"
+        },
+        {
+          "name": "Contentful_ExperimentResponseFilter"
+        },
+        {
+          "name": "Contentful_ExperimentResponseLinkingCollections"
+        },
+        {
+          "name": "Contentful_ExperimentResponseNt_experiencesCollection"
+        },
+        {
+          "name": "Contentful_ExperimentResponseOrder"
+        },
+        {
+          "name": "Contentful_Footer"
+        },
+        {
+          "name": "Contentful_FooterBrandStatement"
+        },
+        {
+          "name": "Contentful_FooterBrandStatementAssets"
+        },
+        {
+          "name": "Contentful_FooterBrandStatementEntries"
+        },
+        {
+          "name": "Contentful_FooterBrandStatementLinks"
+        },
+        {
+          "name": "Contentful_FooterBrandStatementResources"
+        },
+        {
+          "name": "Contentful_FooterBrandStatementResourcesBlock"
+        },
+        {
+          "name": "Contentful_FooterBrandStatementResourcesHyperlink"
+        },
+        {
+          "name": "Contentful_FooterBrandStatementResourcesInline"
+        },
+        {
+          "name": "Contentful_FooterCollection"
+        },
+        {
+          "name": "Contentful_FooterFilter"
+        },
+        {
+          "name": "Contentful_FooterIconsCollection"
+        },
+        {
+          "name": "Contentful_FooterIconsCollectionOrder"
+        },
+        {
+          "name": "Contentful_FooterLinkingCollections"
+        },
+        {
+          "name": "Contentful_FooterOrder"
+        },
+        {
+          "name": "Contentful_FooterPrimaryCollection"
+        },
+        {
+          "name": "Contentful_FooterPrimaryCollectionOrder"
+        },
+        {
+          "name": "Contentful_FooterSecondaryCollection"
+        },
+        {
+          "name": "Contentful_FooterSecondaryCollectionOrder"
+        },
+        {
+          "name": "Contentful_FooterSocialIconsCollection"
+        },
+        {
+          "name": "Contentful_FooterSocialIconsCollectionOrder"
+        },
+        {
+          "name": "Contentful_FooterUtilityCollection"
+        },
+        {
+          "name": "Contentful_FooterUtilityCollectionOrder"
+        },
+        {
+          "name": "Contentful_GridBlock"
+        },
+        {
+          "name": "Contentful_GridBlockBlock"
+        },
+        {
+          "name": "Contentful_GridBlockCollection"
+        },
+        {
+          "name": "Contentful_GridBlockFilter"
+        },
+        {
+          "name": "Contentful_GridBlockLinkingCollections"
+        },
+        {
+          "name": "Contentful_GridBlockLinkingCollectionsBlockGridCollectionOrder"
+        },
+        {
+          "name": "Contentful_GridBlockOrder"
+        },
+        {
+          "name": "Contentful_HexColor"
+        },
+        {
+          "name": "Contentful_HighlightCard"
+        },
+        {
+          "name": "Contentful_HighlightCardCollection"
+        },
+        {
+          "name": "Contentful_HighlightCardFilter"
+        },
+        {
+          "name": "Contentful_HighlightCardLinkingCollections"
+        },
+        {
+          "name": "Contentful_HighlightCardLinkingCollectionsBlockHighlightCardsCollectionOrder"
+        },
+        {
+          "name": "Contentful_HighlightCardLinkingCollectionsProductStyleCollectionOrder"
+        },
+        {
+          "name": "Contentful_HighlightCardOrder"
+        },
+        {
+          "name": "Contentful_Hotspot"
+        },
+        {
+          "name": "Contentful_HotspotCollection"
+        },
+        {
+          "name": "Contentful_HotspotFilter"
+        },
+        {
+          "name": "Contentful_HotspotGroup"
+        },
+        {
+          "name": "Contentful_HotspotGroupCollection"
+        },
+        {
+          "name": "Contentful_HotspotGroupFilter"
+        },
+        {
+          "name": "Contentful_HotspotGroupHotspotsCollection"
+        },
+        {
+          "name": "Contentful_HotspotGroupHotspotsCollectionOrder"
+        },
+        {
+          "name": "Contentful_HotspotGroupLinkingCollections"
+        },
+        {
+          "name": "Contentful_HotspotGroupLinkingCollectionsBlockHotspotsCollectionOrder"
+        },
+        {
+          "name": "Contentful_HotspotGroupOrder"
+        },
+        {
+          "name": "Contentful_HotspotLinkingCollections"
+        },
+        {
+          "name": "Contentful_HotspotLinkingCollectionsHotspotGroupCollectionOrder"
+        },
+        {
+          "name": "Contentful_HotspotOrder"
+        },
+        {
+          "name": "Contentful_Hub"
+        },
+        {
+          "name": "Contentful_HubCollection"
+        },
+        {
+          "name": "Contentful_HubFilter"
+        },
+        {
+          "name": "Contentful_HubHubItemsCollection"
+        },
+        {
+          "name": "Contentful_HubItem"
+        },
+        {
+          "name": "Contentful_HubItemCollection"
+        },
+        {
+          "name": "Contentful_HubItemContentCollection"
+        },
+        {
+          "name": "Contentful_HubItemContentFilter"
+        },
+        {
+          "name": "Contentful_HubItemContentItem"
+        },
+        {
+          "name": "Contentful_HubItemFilter"
+        },
+        {
+          "name": "Contentful_HubItemLinkingCollections"
+        },
+        {
+          "name": "Contentful_HubItemMedia"
+        },
+        {
+          "name": "Contentful_HubItemOrder"
+        },
+        {
+          "name": "Contentful_HubLinkingCollections"
+        },
+        {
+          "name": "Contentful_HubLinkingCollectionsPageGenericPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_HubOrder"
+        },
+        {
+          "name": "Contentful_ImageFormat"
+        },
+        {
+          "name": "Contentful_ImageResizeFocus"
+        },
+        {
+          "name": "Contentful_ImageResizeStrategy"
+        },
+        {
+          "name": "Contentful_ImageTransformOptions"
+        },
+        {
+          "name": "Contentful_InfoCard"
+        },
+        {
+          "name": "Contentful_InfoCardCollection"
+        },
+        {
+          "name": "Contentful_InfoCardFilter"
+        },
+        {
+          "name": "Contentful_InfoCardLinkingCollections"
+        },
+        {
+          "name": "Contentful_InfoCardLinkingCollectionsBlockInfoCardsCollectionOrder"
+        },
+        {
+          "name": "Contentful_InfoCardOrder"
+        },
+        {
+          "name": "Contentful_InternalName"
+        },
+        {
+          "name": "Contentful_InternalNameCollection"
+        },
+        {
+          "name": "Contentful_InternalNameFilter"
+        },
+        {
+          "name": "Contentful_InternalNameLinkingCollections"
+        },
+        {
+          "name": "Contentful_InternalNameOrder"
+        },
+        {
+          "name": "Contentful_JSON"
+        },
+        {
+          "name": "Contentful_JsonObjectContainer"
+        },
+        {
+          "name": "Contentful_JsonObjectContainerCollection"
+        },
+        {
+          "name": "Contentful_JsonObjectContainerFilter"
+        },
+        {
+          "name": "Contentful_JsonObjectContainerLinkingCollections"
+        },
+        {
+          "name": "Contentful_JsonObjectContainerOrder"
+        },
+        {
+          "name": "Contentful_LinkNode"
+        },
+        {
+          "name": "Contentful_LinkNodeChildrenCollection"
+        },
+        {
+          "name": "Contentful_LinkNodeChildrenCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeCollection"
+        },
+        {
+          "name": "Contentful_LinkNodeFilter"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollections"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsBlockBillboardCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsBlockChipsCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsBlockHeadlineCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsBlockLookBookCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsBlockProductResultsCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsBlockSeoLinksCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsContactChannelCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsEnrichedLinkCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsEventCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsFooterCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsLinkNodeCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsMicrositeZendaya25CollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsNavigationCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsProductPlanetCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeLinkingCollectionsWayfinderQuestionCollectionOrder"
+        },
+        {
+          "name": "Contentful_LinkNodeOrder"
+        },
+        {
+          "name": "Contentful_Location"
+        },
+        {
+          "name": "Contentful_Look"
+        },
+        {
+          "name": "Contentful_LookCollection"
+        },
+        {
+          "name": "Contentful_LookFilter"
+        },
+        {
+          "name": "Contentful_LookLinkingCollections"
+        },
+        {
+          "name": "Contentful_LookLinkingCollectionsBlockLookBookCollectionOrder"
+        },
+        {
+          "name": "Contentful_LookLinkingCollectionsGridBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_LookLinkingCollectionsMediaBlockCollectionOrder"
+        },
+        {
+          "name": "Contentful_LookMedia"
+        },
+        {
+          "name": "Contentful_LookOrder"
+        },
+        {
+          "name": "Contentful_LookProductsCollection"
+        },
+        {
+          "name": "Contentful_LookProductsCollectionOrder"
+        },
+        {
+          "name": "Contentful_MapMarker"
+        },
+        {
+          "name": "Contentful_MapMarkerCollection"
+        },
+        {
+          "name": "Contentful_MapMarkerFilter"
+        },
+        {
+          "name": "Contentful_MapMarkerLinkingCollections"
+        },
+        {
+          "name": "Contentful_MapMarkerLinkingCollectionsBlockMapCollectionOrder"
+        },
+        {
+          "name": "Contentful_MapMarkerOrder"
+        },
+        {
+          "name": "Contentful_MediaBlock"
+        },
+        {
+          "name": "Contentful_MediaBlockCollection"
+        },
+        {
+          "name": "Contentful_MediaBlockFilter"
+        },
+        {
+          "name": "Contentful_MediaBlockLinkingCollections"
+        },
+        {
+          "name": "Contentful_MediaBlockLinkingCollectionsBlockBlockGalleryCollectionOrder"
+        },
+        {
+          "name": "Contentful_MediaBlockMediaItemsCollection"
+        },
+        {
+          "name": "Contentful_MediaBlockMediaItemsFilter"
+        },
+        {
+          "name": "Contentful_MediaBlockMediaItemsItem"
+        },
+        {
+          "name": "Contentful_MediaBlockOrder"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25Collection"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25Filter"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25GridBlocks1Collection"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25GridBlocks1CollectionOrder"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25GridBlocks2Collection"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25GridBlocks2CollectionOrder"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25GridBlocks3Collection"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25GridBlocks3CollectionOrder"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25LinkingCollections"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25LinkingCollectionsPageCollectionPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25LinkingCollectionsPageMicrositeCollectionOrder"
+        },
+        {
+          "name": "Contentful_MicrositeLoewe25Order"
+        },
+        {
+          "name": "Contentful_MicrositeZendaya25"
+        },
+        {
+          "name": "Contentful_MicrositeZendaya25BehindTheScenesMediaCollection"
+        },
+        {
+          "name": "Contentful_MicrositeZendaya25BehindTheScenesMediaCollectionOrder"
+        },
+        {
+          "name": "Contentful_MicrositeZendaya25Collection"
+        },
+        {
+          "name": "Contentful_MicrositeZendaya25Filter"
+        },
+        {
+          "name": "Contentful_MicrositeZendaya25LinkingCollections"
+        },
+        {
+          "name": "Contentful_MicrositeZendaya25LinkingCollectionsPageMicrositeCollectionOrder"
+        },
+        {
+          "name": "Contentful_MicrositeZendaya25Order"
+        },
+        {
+          "name": "Contentful_Name"
+        },
+        {
+          "name": "Contentful_NameCollection"
+        },
+        {
+          "name": "Contentful_NameFilter"
+        },
+        {
+          "name": "Contentful_NameLinkingCollections"
+        },
+        {
+          "name": "Contentful_NameOrder"
+        },
+        {
+          "name": "Contentful_Navigation"
+        },
+        {
+          "name": "Contentful_NavigationCollection"
+        },
+        {
+          "name": "Contentful_NavigationFilter"
+        },
+        {
+          "name": "Contentful_NavigationLinkingCollections"
+        },
+        {
+          "name": "Contentful_NavigationOrder"
+        },
+        {
+          "name": "Contentful_NavigationPrimaryCollection"
+        },
+        {
+          "name": "Contentful_NavigationPrimaryCollectionOrder"
+        },
+        {
+          "name": "Contentful_NavigationSecondaryCollection"
+        },
+        {
+          "name": "Contentful_NavigationSecondaryCollectionOrder"
+        },
+        {
+          "name": "Contentful_NewsletterSignup"
+        },
+        {
+          "name": "Contentful_NewsletterSignupCollection"
+        },
+        {
+          "name": "Contentful_NewsletterSignupFilter"
+        },
+        {
+          "name": "Contentful_NewsletterSignupLinkingCollections"
+        },
+        {
+          "name": "Contentful_NewsletterSignupLinkingCollectionsBlockBookCollectionOrder"
+        },
+        {
+          "name": "Contentful_NewsletterSignupLinkingCollectionsBlockTriggerCollectionOrder"
+        },
+        {
+          "name": "Contentful_NewsletterSignupLinkingCollectionsHubItemCollectionOrder"
+        },
+        {
+          "name": "Contentful_NewsletterSignupOrder"
+        },
+        {
+          "name": "Contentful_Page"
+        },
+        {
+          "name": "Contentful_PageBreadcrumbsCollection"
+        },
+        {
+          "name": "Contentful_PageBreadcrumbsFilter"
+        },
+        {
+          "name": "Contentful_PageBreadcrumbsItem"
+        },
+        {
+          "name": "Contentful_PageCollection"
+        },
+        {
+          "name": "Contentful_PageCollectionPage"
+        },
+        {
+          "name": "Contentful_PageCollectionPageBlocksCollection"
+        },
+        {
+          "name": "Contentful_PageCollectionPageBlocksFilter"
+        },
+        {
+          "name": "Contentful_PageCollectionPageBlocksItem"
+        },
+        {
+          "name": "Contentful_PageCollectionPageCollection"
+        },
+        {
+          "name": "Contentful_PageCollectionPageFilter"
+        },
+        {
+          "name": "Contentful_PageCollectionPageLinkingCollections"
+        },
+        {
+          "name": "Contentful_PageCollectionPageLinkingCollectionsChapterCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageCollectionPageLinkingCollectionsPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageCollectionPageOrder"
+        },
+        {
+          "name": "Contentful_PageContent"
+        },
+        {
+          "name": "Contentful_PageFilter"
+        },
+        {
+          "name": "Contentful_PageGenericPage"
+        },
+        {
+          "name": "Contentful_PageGenericPageBlocksCollection"
+        },
+        {
+          "name": "Contentful_PageGenericPageBlocksFilter"
+        },
+        {
+          "name": "Contentful_PageGenericPageBlocksItem"
+        },
+        {
+          "name": "Contentful_PageGenericPageCollection"
+        },
+        {
+          "name": "Contentful_PageGenericPageFilter"
+        },
+        {
+          "name": "Contentful_PageGenericPageLinkingCollections"
+        },
+        {
+          "name": "Contentful_PageGenericPageLinkingCollectionsChapterCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageGenericPageLinkingCollectionsPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageGenericPageOrder"
+        },
+        {
+          "name": "Contentful_PageLinkingCollections"
+        },
+        {
+          "name": "Contentful_PageLinkingCollectionsBlockChipsCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageLinkingCollectionsBlockProductResultsCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageLinkingCollectionsBlockSeoLinksCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageLinkingCollectionsPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageLinkingCollectionsPagePlpCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageMicrosite"
+        },
+        {
+          "name": "Contentful_PageMicrositeBlocksCollection"
+        },
+        {
+          "name": "Contentful_PageMicrositeBlocksFilter"
+        },
+        {
+          "name": "Contentful_PageMicrositeBlocksItem"
+        },
+        {
+          "name": "Contentful_PageMicrositeCollection"
+        },
+        {
+          "name": "Contentful_PageMicrositeFilter"
+        },
+        {
+          "name": "Contentful_PageMicrositeLinkingCollections"
+        },
+        {
+          "name": "Contentful_PageMicrositeLinkingCollectionsPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageMicrositeOrder"
+        },
+        {
+          "name": "Contentful_PageOrder"
+        },
+        {
+          "name": "Contentful_PagePageStatic"
+        },
+        {
+          "name": "Contentful_PagePageStaticCollection"
+        },
+        {
+          "name": "Contentful_PagePageStaticFilter"
+        },
+        {
+          "name": "Contentful_PagePageStaticLinkingCollections"
+        },
+        {
+          "name": "Contentful_PagePageStaticLinkingCollectionsPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_PagePageStaticOrder"
+        },
+        {
+          "name": "Contentful_PagePdp"
+        },
+        {
+          "name": "Contentful_PagePdpBlocksCollection"
+        },
+        {
+          "name": "Contentful_PagePdpBlocksFilter"
+        },
+        {
+          "name": "Contentful_PagePdpBlocksItem"
+        },
+        {
+          "name": "Contentful_PagePdpCollection"
+        },
+        {
+          "name": "Contentful_PagePdpFilter"
+        },
+        {
+          "name": "Contentful_PagePdpLinkingCollections"
+        },
+        {
+          "name": "Contentful_PagePdpLinkingCollectionsPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_PagePdpOrder"
+        },
+        {
+          "name": "Contentful_PagePdpProductsCollection"
+        },
+        {
+          "name": "Contentful_PagePdpProductsCollectionOrder"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodExtraDescription"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodExtraDescriptionAssets"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodExtraDescriptionEntries"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodExtraDescriptionLinks"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodExtraDescriptionResources"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodExtraDescriptionResourcesBlock"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodExtraDescriptionResourcesHyperlink"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodExtraDescriptionResourcesInline"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodFooterText"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodFooterTextAssets"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodFooterTextEntries"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodFooterTextLinks"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodFooterTextResources"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodFooterTextResourcesBlock"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodFooterTextResourcesHyperlink"
+        },
+        {
+          "name": "Contentful_PagePdpPurchasePodFooterTextResourcesInline"
+        },
+        {
+          "name": "Contentful_PagePlp"
+        },
+        {
+          "name": "Contentful_PagePlpBlocksCollection"
+        },
+        {
+          "name": "Contentful_PagePlpBlocksFilter"
+        },
+        {
+          "name": "Contentful_PagePlpBlocksItem"
+        },
+        {
+          "name": "Contentful_PagePlpBreadcrumbsCollection"
+        },
+        {
+          "name": "Contentful_PagePlpBreadcrumbsCollectionOrder"
+        },
+        {
+          "name": "Contentful_PagePlpCollection"
+        },
+        {
+          "name": "Contentful_PagePlpFilter"
+        },
+        {
+          "name": "Contentful_PagePlpLinkingCollections"
+        },
+        {
+          "name": "Contentful_PagePlpLinkingCollectionsPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_PagePlpOrder"
+        },
+        {
+          "name": "Contentful_PagePlpSeoParagraph"
+        },
+        {
+          "name": "Contentful_PagePlpSeoParagraphAssets"
+        },
+        {
+          "name": "Contentful_PagePlpSeoParagraphEntries"
+        },
+        {
+          "name": "Contentful_PagePlpSeoParagraphLinks"
+        },
+        {
+          "name": "Contentful_PagePlpSeoParagraphResources"
+        },
+        {
+          "name": "Contentful_PagePlpSeoParagraphResourcesBlock"
+        },
+        {
+          "name": "Contentful_PagePlpSeoParagraphResourcesHyperlink"
+        },
+        {
+          "name": "Contentful_PagePlpSeoParagraphResourcesInline"
+        },
+        {
+          "name": "Contentful_PagePlpSubnavigationCollection"
+        },
+        {
+          "name": "Contentful_PagePlpSubnavigationFilter"
+        },
+        {
+          "name": "Contentful_PagePlpSubnavigationItem"
+        },
+        {
+          "name": "Contentful_PageStoryPage"
+        },
+        {
+          "name": "Contentful_PageStoryPageBlocksCollection"
+        },
+        {
+          "name": "Contentful_PageStoryPageBlocksFilter"
+        },
+        {
+          "name": "Contentful_PageStoryPageBlocksItem"
+        },
+        {
+          "name": "Contentful_PageStoryPageCollection"
+        },
+        {
+          "name": "Contentful_PageStoryPageFilter"
+        },
+        {
+          "name": "Contentful_PageStoryPageLinkingCollections"
+        },
+        {
+          "name": "Contentful_PageStoryPageLinkingCollectionsBlockFeaturedCardCollectionCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageStoryPageLinkingCollectionsBlockMediaCarouselCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageStoryPageLinkingCollectionsChapterCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageStoryPageLinkingCollectionsHubItemCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageStoryPageLinkingCollectionsNameCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageStoryPageLinkingCollectionsPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_PageStoryPageOrder"
+        },
+        {
+          "name": "Contentful_PageStoryPageTagsCollection"
+        },
+        {
+          "name": "Contentful_PageStoryPageTagsCollectionOrder"
+        },
+        {
+          "name": "Contentful_PaymentIcon"
+        },
+        {
+          "name": "Contentful_PaymentIconCollection"
+        },
+        {
+          "name": "Contentful_PaymentIconFilter"
+        },
+        {
+          "name": "Contentful_PaymentIconLinkingCollections"
+        },
+        {
+          "name": "Contentful_PaymentIconOrder"
+        },
+        {
+          "name": "Contentful_Person"
+        },
+        {
+          "name": "Contentful_PersonCollection"
+        },
+        {
+          "name": "Contentful_PersonFilter"
+        },
+        {
+          "name": "Contentful_PersonLinkingCollections"
+        },
+        {
+          "name": "Contentful_PersonLinkingCollectionsEndorsementCollectionOrder"
+        },
+        {
+          "name": "Contentful_PersonLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_PersonOrder"
+        },
+        {
+          "name": "Contentful_PhotoshootModel"
+        },
+        {
+          "name": "Contentful_PhotoshootModelCollection"
+        },
+        {
+          "name": "Contentful_PhotoshootModelFilter"
+        },
+        {
+          "name": "Contentful_PhotoshootModelLinkingCollections"
+        },
+        {
+          "name": "Contentful_PhotoshootModelLinkingCollectionsProductCollectionOrder"
+        },
+        {
+          "name": "Contentful_PhotoshootModelOrder"
+        },
+        {
+          "name": "Contentful_Product"
+        },
+        {
+          "name": "Contentful_ProductCollection"
+        },
+        {
+          "name": "Contentful_ProductFilter"
+        },
+        {
+          "name": "Contentful_ProductGalleryAssetsCollection"
+        },
+        {
+          "name": "Contentful_ProductGalleryAssetsCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductLinkingCollections"
+        },
+        {
+          "name": "Contentful_ProductLinkingCollectionsBlockShopTheLookCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductLinkingCollectionsLookCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductLinkingCollectionsProductStyleCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductOrder"
+        },
+        {
+          "name": "Contentful_ProductPhotoshootModelsCollection"
+        },
+        {
+          "name": "Contentful_ProductPhotoshootModelsCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductPlanet"
+        },
+        {
+          "name": "Contentful_ProductPlanetCollection"
+        },
+        {
+          "name": "Contentful_ProductPlanetFilter"
+        },
+        {
+          "name": "Contentful_ProductPlanetLinkingCollections"
+        },
+        {
+          "name": "Contentful_ProductPlanetLinkingCollectionsMicrositeZendaya25CollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductPlanetOrder"
+        },
+        {
+          "name": "Contentful_ProductPlanetProductsCollection"
+        },
+        {
+          "name": "Contentful_ProductPlanetProductsCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductStyle"
+        },
+        {
+          "name": "Contentful_ProductStyleCollection"
+        },
+        {
+          "name": "Contentful_ProductStyleFilter"
+        },
+        {
+          "name": "Contentful_ProductStyleHighlightCardsCollection"
+        },
+        {
+          "name": "Contentful_ProductStyleHighlightCardsCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductStyleHighlightCardsMensCollection"
+        },
+        {
+          "name": "Contentful_ProductStyleHighlightCardsMensCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductStyleHighlightCardsWomensCollection"
+        },
+        {
+          "name": "Contentful_ProductStyleHighlightCardsWomensCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductStyleLinkedProductStylesCollection"
+        },
+        {
+          "name": "Contentful_ProductStyleLinkedProductStylesCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductStyleLinkingCollections"
+        },
+        {
+          "name": "Contentful_ProductStyleLinkingCollectionsPagePdpCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductStyleLinkingCollectionsProductStyleCollectionOrder"
+        },
+        {
+          "name": "Contentful_ProductStyleOrder"
+        },
+        {
+          "name": "Contentful_ProductStyleProductsCollection"
+        },
+        {
+          "name": "Contentful_ProductStyleProductsCollectionOrder"
+        },
+        {
+          "name": "Contentful_PromoCard"
+        },
+        {
+          "name": "Contentful_PromoCardAsset"
+        },
+        {
+          "name": "Contentful_PromoCardButton"
+        },
+        {
+          "name": "Contentful_PromoCardButtonCollection"
+        },
+        {
+          "name": "Contentful_PromoCardButtonFilter"
+        },
+        {
+          "name": "Contentful_PromoCardButtonLinkingCollections"
+        },
+        {
+          "name": "Contentful_PromoCardButtonLinkingCollectionsEditorialCardCollectionOrder"
+        },
+        {
+          "name": "Contentful_PromoCardButtonLinkingCollectionsPromoCardCollectionOrder"
+        },
+        {
+          "name": "Contentful_PromoCardButtonOrder"
+        },
+        {
+          "name": "Contentful_PromoCardCollection"
+        },
+        {
+          "name": "Contentful_PromoCardFilter"
+        },
+        {
+          "name": "Contentful_PromoCardLinkingCollections"
+        },
+        {
+          "name": "Contentful_PromoCardLinkingCollectionsBlockFeaturedCardCollectionCollectionOrder"
+        },
+        {
+          "name": "Contentful_PromoCardLinkingCollectionsBlockMediaCarouselCollectionOrder"
+        },
+        {
+          "name": "Contentful_PromoCardLinkingCollectionsDyContentCollectionOrder"
+        },
+        {
+          "name": "Contentful_PromoCardNt_experiencesCollection"
+        },
+        {
+          "name": "Contentful_PromoCardOrder"
+        },
+        {
+          "name": "Contentful_Quality"
+        },
+        {
+          "name": "Contentful_Rectangle"
+        },
+        {
+          "name": "Contentful_Reel"
+        },
+        {
+          "name": "Contentful_ReelCollection"
+        },
+        {
+          "name": "Contentful_ReelFilter"
+        },
+        {
+          "name": "Contentful_ReelLinkingCollections"
+        },
+        {
+          "name": "Contentful_ReelLinkingCollectionsBlockReelsCollectionOrder"
+        },
+        {
+          "name": "Contentful_ReelOrder"
+        },
+        {
+          "name": "Contentful_ResourceLink"
+        },
+        {
+          "name": "Contentful_ResourceSys"
+        },
+        {
+          "name": "Contentful_Seo"
+        },
+        {
+          "name": "Contentful_SeoCollection"
+        },
+        {
+          "name": "Contentful_SeoFilter"
+        },
+        {
+          "name": "Contentful_SeoLinkingCollections"
+        },
+        {
+          "name": "Contentful_SeoLinkingCollectionsCategoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_SeoLinkingCollectionsPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_SeoLinkingCollectionsProductCollectionOrder"
+        },
+        {
+          "name": "Contentful_SeoOrder"
+        },
+        {
+          "name": "Contentful_SizeChart"
+        },
+        {
+          "name": "Contentful_SizeChartCollection"
+        },
+        {
+          "name": "Contentful_SizeChartFilter"
+        },
+        {
+          "name": "Contentful_SizeChartLinkingCollections"
+        },
+        {
+          "name": "Contentful_SizeChartLinkingCollectionsProductCollectionOrder"
+        },
+        {
+          "name": "Contentful_SizeChartOrder"
+        },
+        {
+          "name": "Contentful_StoreData"
+        },
+        {
+          "name": "Contentful_StoreDataCollection"
+        },
+        {
+          "name": "Contentful_StoreDataFilter"
+        },
+        {
+          "name": "Contentful_StoreDataLinkingCollections"
+        },
+        {
+          "name": "Contentful_StoreDataOrder"
+        },
+        {
+          "name": "Contentful_StoryButton"
+        },
+        {
+          "name": "Contentful_StoryButtonCollection"
+        },
+        {
+          "name": "Contentful_StoryButtonFilter"
+        },
+        {
+          "name": "Contentful_StoryButtonLinkingCollections"
+        },
+        {
+          "name": "Contentful_StoryButtonOrder"
+        },
+        {
+          "name": "Contentful_Sys"
+        },
+        {
+          "name": "Contentful_SysFilter"
+        },
+        {
+          "name": "Contentful_Tag"
+        },
+        {
+          "name": "Contentful_TagCollection"
+        },
+        {
+          "name": "Contentful_TagFilter"
+        },
+        {
+          "name": "Contentful_TagLinkingCollections"
+        },
+        {
+          "name": "Contentful_TagLinkingCollectionsBlockMediaCarouselCollectionOrder"
+        },
+        {
+          "name": "Contentful_TagLinkingCollectionsBlockTagGridCollectionOrder"
+        },
+        {
+          "name": "Contentful_TagLinkingCollectionsHubItemCollectionOrder"
+        },
+        {
+          "name": "Contentful_TagLinkingCollectionsPageStoryPageCollectionOrder"
+        },
+        {
+          "name": "Contentful_TagOrder"
+        },
+        {
+          "name": "Contentful_TaxonomyConcept"
+        },
+        {
+          "name": "Contentful_VariantContainer"
+        },
+        {
+          "name": "Contentful_VariantContainerCollection"
+        },
+        {
+          "name": "Contentful_VariantContainerFilter"
+        },
+        {
+          "name": "Contentful_VariantContainerLinkingCollections"
+        },
+        {
+          "name": "Contentful_VariantContainerLinkingCollectionsBlockExperimentCollectionOrder"
+        },
+        {
+          "name": "Contentful_VariantContainerOrder"
+        },
+        {
+          "name": "Contentful_VariantContainerVariantsCollection"
+        },
+        {
+          "name": "Contentful_Video"
+        },
+        {
+          "name": "Contentful_VideoCollection"
+        },
+        {
+          "name": "Contentful_VideoFilter"
+        },
+        {
+          "name": "Contentful_VideoLinkingCollections"
+        },
+        {
+          "name": "Contentful_VideoLinkingCollectionsBlockStandardVideoCollectionOrder"
+        },
+        {
+          "name": "Contentful_VideoLinkingCollectionsMicrositeZendaya25CollectionOrder"
+        },
+        {
+          "name": "Contentful_VideoOrder"
+        },
+        {
+          "name": "Contentful_WayfinderQuestion"
+        },
+        {
+          "name": "Contentful_WayfinderQuestionAnswersCollection"
+        },
+        {
+          "name": "Contentful_WayfinderQuestionAnswersCollectionOrder"
+        },
+        {
+          "name": "Contentful_WayfinderQuestionCollection"
+        },
+        {
+          "name": "Contentful_WayfinderQuestionFilter"
+        },
+        {
+          "name": "Contentful_WayfinderQuestionLinkingCollections"
+        },
+        {
+          "name": "Contentful_WayfinderQuestionLinkingCollectionsBlockWayfinderCollectionOrder"
+        },
+        {
+          "name": "Contentful_WayfinderQuestionOrder"
+        },
+        {
+          "name": "ContentfulAsset"
+        },
+        {
+          "name": "Country"
+        },
+        {
+          "name": "CountryNameTranslation"
+        },
+        {
+          "name": "CreateBackorderPayload"
+        },
+        {
+          "name": "CreateContactRequestPayload"
+        },
+        {
+          "name": "CreateContactRequestV2Payload"
+        },
+        {
+          "name": "CreateContactRequestV3Payload"
+        },
+        {
+          "name": "CreateOrUpdateUserAddressPayload"
+        },
+        {
+          "name": "CreateOrUpdateWarrantyClaimAttributes"
+        },
+        {
+          "name": "CreateReturnActionsPayload"
+        },
+        {
+          "name": "CreateReturnActionsV2Payload"
+        },
+        {
+          "name": "CreateShopifyCartPayload"
+        },
+        {
+          "name": "CreateUserV2Payload"
+        },
+        {
+          "name": "CreateVerifiedUserPayload"
+        },
+        {
+          "name": "CreateWarrantyLineItemAttachmentSignedUrlPayload"
+        },
+        {
+          "name": "CreateWarrantyLineItemAttachmentSignedUrlV2Payload"
+        },
+        {
+          "name": "Currency"
+        },
+        {
+          "name": "CustomerDto"
+        },
+        {
+          "name": "CustomerInterest"
+        },
+        {
+          "name": "CustomerPreferences"
+        },
+        {
+          "name": "CustomerResult"
+        },
+        {
+          "name": "Date"
+        },
+        {
+          "name": "DateRange"
+        },
+        {
+          "name": "DateTime"
+        },
+        {
+          "name": "DeleteFavoriteResult"
+        },
+        {
+          "name": "DeleteSavedPaymentPayload"
+        },
+        {
+          "name": "DeleteUserAddressPayload"
+        },
+        {
+          "name": "DeliveryDate"
+        },
+        {
+          "name": "Document"
+        },
+        {
+          "name": "DynamicOverlay"
+        },
+        {
+          "name": "Entry"
+        },
+        {
+          "name": "Error"
+        },
+        {
+          "name": "ErrorDictionary"
+        },
+        {
+          "name": "ErrorExtensions"
+        },
+        {
+          "name": "EventCartItemType"
+        },
+        {
+          "name": "EventPropertiesType"
+        },
+        {
+          "name": "EventSecondaryIdentifierType"
+        },
+        {
+          "name": "EventType"
+        },
+        {
+          "name": "ExchangeItemPayload"
+        },
+        {
+          "name": "ExperimentVariant"
+        },
+        {
+          "name": "FavoriteAlreadyExistsErrorGQL"
+        },
+        {
+          "name": "FavoriteDto"
+        },
+        {
+          "name": "FavoriteList"
+        },
+        {
+          "name": "FavoriteNotFoundErrorGQL"
+        },
+        {
+          "name": "FavoriteProductLimitErrorGQL"
+        },
+        {
+          "name": "FavoriteResult"
+        },
+        {
+          "name": "FeatureGate"
+        },
+        {
+          "name": "File"
+        },
+        {
+          "name": "FilterInput"
+        },
+        {
+          "name": "FilterPage"
+        },
+        {
+          "name": "FilterPageFilter"
+        },
+        {
+          "name": "FilterPageFilterValue"
+        },
+        {
+          "name": "FilterPageItem"
+        },
+        {
+          "name": "FilterPageItemConnection"
+        },
+        {
+          "name": "FilterPageItemEdge"
+        },
+        {
+          "name": "FilterPageItemVariant"
+        },
+        {
+          "name": "FilterPagePromoCard"
+        },
+        {
+          "name": "FilterPageSubPage"
+        },
+        {
+          "name": "FilterPageTopBanner"
+        },
+        {
+          "name": "Gender"
+        },
+        {
+          "name": "Group"
+        },
+        {
+          "name": "Health"
+        },
+        {
+          "name": "HelpCenterPage"
+        },
+        {
+          "name": "HighlightCard"
+        },
+        {
+          "name": "Image"
+        },
+        {
+          "name": "InitiateReturnAttributes"
+        },
+        {
+          "name": "InitiateReturnPayload"
+        },
+        {
+          "name": "InseamSize"
+        },
+        {
+          "name": "InseamSizes"
+        },
+        {
+          "name": "InseamsType"
+        },
+        {
+          "name": "ISO8601Date"
+        },
+        {
+          "name": "ISO8601DateTime"
+        },
+        {
+          "name": "ISOCountry"
+        },
+        {
+          "name": "ISOLanguage"
+        },
+        {
+          "name": "Item"
+        },
+        {
+          "name": "ItemAction"
+        },
+        {
+          "name": "ItemActionName"
+        },
+        {
+          "name": "ItemsSortableFeatures"
+        },
+        {
+          "name": "ItemsSortableOrder"
+        },
+        {
+          "name": "ItemsSortByInput"
+        },
+        {
+          "name": "ItemStatus"
+        },
+        {
+          "name": "ItemType"
+        },
+        {
+          "name": "Json"
+        },
+        {
+          "name": "JSON"
+        },
+        {
+          "name": "Language"
+        },
+        {
+          "name": "LegacyStore"
+        },
+        {
+          "name": "LineItem"
+        },
+        {
+          "name": "LineItemAttachmentScope"
+        },
+        {
+          "name": "LoginOrCreateSocialUserAttributes"
+        },
+        {
+          "name": "LoginOrCreateSocialUserPayload"
+        },
+        {
+          "name": "LoginPayload"
+        },
+        {
+          "name": "LogoutPayload"
+        },
+        {
+          "name": "MailingListAttributes"
+        },
+        {
+          "name": "MakePaymentPayload"
+        },
+        {
+          "name": "Media"
+        },
+        {
+          "name": "Mutation"
+        },
+        {
+          "name": "Navigation"
+        },
+        {
+          "name": "NewReturnResult"
+        },
+        {
+          "name": "Newsletter"
+        },
+        {
+          "name": "NewUserAttributes"
+        },
+        {
+          "name": "Order"
+        },
+        {
+          "name": "OrderConnection"
+        },
+        {
+          "name": "OrderEdge"
+        },
+        {
+          "name": "OrderHubAddress"
+        },
+        {
+          "name": "OrderHubItem"
+        },
+        {
+          "name": "OrderHubOrder"
+        },
+        {
+          "name": "OrderHubReturnOrder"
+        },
+        {
+          "name": "OrderItem"
+        },
+        {
+          "name": "OrderMutation"
+        },
+        {
+          "name": "OrderStatus"
+        },
+        {
+          "name": "PageInfo"
+        },
+        {
+          "name": "Paths"
+        },
+        {
+          "name": "Payment"
+        },
+        {
+          "name": "PaymentIdentificationParams"
+        },
+        {
+          "name": "PhotoshootModel"
+        },
+        {
+          "name": "PopulateOrderPayload"
+        },
+        {
+          "name": "PreferencesOptions"
+        },
+        {
+          "name": "PrefilledNewsletterCheckbox"
+        },
+        {
+          "name": "Pricing"
+        },
+        {
+          "name": "PricingIntervalUnit"
+        },
+        {
+          "name": "Product"
+        },
+        {
+          "name": "ProductActivity"
+        },
+        {
+          "name": "ProductData"
+        },
+        {
+          "name": "ProductDetails"
+        },
+        {
+          "name": "ProductDetailsBlock"
+        },
+        {
+          "name": "ProductDetailsByGender"
+        },
+        {
+          "name": "ProductDetailsItem"
+        },
+        {
+          "name": "ProductFact"
+        },
+        {
+          "name": "ProductFactory"
+        },
+        {
+          "name": "ProductFacts"
+        },
+        {
+          "name": "ProductFactsID"
+        },
+        {
+          "name": "ProductFeatures"
+        },
+        {
+          "name": "ProductGroup"
+        },
+        {
+          "name": "ProductHighlightCards"
+        },
+        {
+          "name": "ProductRailBlock"
+        },
+        {
+          "name": "ProductRailBlockItem"
+        },
+        {
+          "name": "ProductRecommendations"
+        },
+        {
+          "name": "ProductSizeChart"
+        },
+        {
+          "name": "ProductSizes"
+        },
+        {
+          "name": "ProductSubscription"
+        },
+        {
+          "name": "ProductVariantData"
+        },
+        {
+          "name": "ProductWeight"
+        },
+        {
+          "name": "ProductWeights"
+        },
+        {
+          "name": "ProfilePicture"
+        },
+        {
+          "name": "PromotionAdjustment"
+        },
+        {
+          "name": "PromotionCode"
+        },
+        {
+          "name": "PurchasePodExtraDescription"
+        },
+        {
+          "name": "PurchasePodFooterText"
+        },
+        {
+          "name": "PurchaseSubscriptionPayload"
+        },
+        {
+          "name": "Query"
+        },
+        {
+          "name": "RecoverUserPasswordPayload"
+        },
+        {
+          "name": "RecycleItemPayload"
+        },
+        {
+          "name": "RefreshTokenPayload"
+        },
+        {
+          "name": "RegisterToMailingListPayload"
+        },
+        {
+          "name": "RegisterToRestrictedZipCodeUpdatesPayload"
+        },
+        {
+          "name": "ReportDyEngagementPayload"
+        },
+        {
+          "name": "ReportDyEventsPayload"
+        },
+        {
+          "name": "ReportDyPageviewPayload"
+        },
+        {
+          "name": "ReportExposureResult"
+        },
+        {
+          "name": "ResetOrderPaymentPayload"
+        },
+        {
+          "name": "ResetUserPasswordPayload"
+        },
+        {
+          "name": "Result"
+        },
+        {
+          "name": "Return"
+        },
+        {
+          "name": "ReturnAction"
+        },
+        {
+          "name": "ReturnItem"
+        },
+        {
+          "name": "ReturnItemAttributes"
+        },
+        {
+          "name": "ReturnReason"
+        },
+        {
+          "name": "ReturnReasonOption"
+        },
+        {
+          "name": "Returns"
+        },
+        {
+          "name": "SalesOrder"
+        },
+        {
+          "name": "SaveShopifyCartPayload"
+        },
+        {
+          "name": "SendCurrentOrderPayload"
+        },
+        {
+          "name": "ShippingAddressInput"
+        },
+        {
+          "name": "ShippingRate"
+        },
+        {
+          "name": "ShoeFinderAnswer"
+        },
+        {
+          "name": "ShoeFinderQuestion"
+        },
+        {
+          "name": "ShoeFinderVertical"
+        },
+        {
+          "name": "ShopifyCart"
+        },
+        {
+          "name": "ShopifyCheckout"
+        },
+        {
+          "name": "SideNavGroup"
+        },
+        {
+          "name": "SizeChartItem"
+        },
+        {
+          "name": "SizeCode"
+        },
+        {
+          "name": "SizeInfo"
+        },
+        {
+          "name": "SizeMeasurement"
+        },
+        {
+          "name": "Sizing"
+        },
+        {
+          "name": "SizingRecommendation"
+        },
+        {
+          "name": "SlotIdProductData"
+        },
+        {
+          "name": "SlotIds"
+        },
+        {
+          "name": "SpreePayment"
+        },
+        {
+          "name": "Store"
+        },
+        {
+          "name": "StoreCredit"
+        },
+        {
+          "name": "StoreCurrency"
+        },
+        {
+          "name": "StoreProductStatus"
+        },
+        {
+          "name": "StoreShipping"
+        },
+        {
+          "name": "StoreSubscriptionCartPayload"
+        },
+        {
+          "name": "SubmitPaymentDetailsAttributes"
+        },
+        {
+          "name": "SubmitPaymentDetailsPayload"
+        },
+        {
+          "name": "SubscriptionAction"
+        },
+        {
+          "name": "SubscriptionActionName"
+        },
+        {
+          "name": "SubscriptionAttributes"
+        },
+        {
+          "name": "SubscriptionCancellationReason"
+        },
+        {
+          "name": "SubscriptionCustom"
+        },
+        {
+          "name": "SubscriptionOrder"
+        },
+        {
+          "name": "SubscriptionOrigin"
+        },
+        {
+          "name": "SubscriptionPlan"
+        },
+        {
+          "name": "SubscriptionStatus"
+        },
+        {
+          "name": "SubscriptionTotals"
+        },
+        {
+          "name": "Survey"
+        },
+        {
+          "name": "TaxAdjustment"
+        },
+        {
+          "name": "Territory"
+        },
+        {
+          "name": "TerritoryCountry"
+        },
+        {
+          "name": "TerritoryState"
+        },
+        {
+          "name": "TrackingStatus"
+        },
+        {
+          "name": "TriggerEmailVerificationPayload"
+        },
+        {
+          "name": "UpdateBillingAddressPayload"
+        },
+        {
+          "name": "UpdateBillingInfoPayload"
+        },
+        {
+          "name": "UpdateCustomerAttributes"
+        },
+        {
+          "name": "UpdateCustomerSolidusErrorGQL"
+        },
+        {
+          "name": "UpdateNewsletterSubscriptionPayload"
+        },
+        {
+          "name": "UpdateShippingAddressPayload"
+        },
+        {
+          "name": "UpdateShippingRatePayload"
+        },
+        {
+          "name": "UpdateUserAttributes"
+        },
+        {
+          "name": "UpdateUserPayload"
+        },
+        {
+          "name": "UpsertVerificationRequestPayload"
+        },
+        {
+          "name": "URL"
+        },
+        {
+          "name": "User"
+        },
+        {
+          "name": "UserAddress"
+        },
+        {
+          "name": "UserAddressAttributesType"
+        },
+        {
+          "name": "UserSession"
+        },
+        {
+          "name": "Variant"
+        },
+        {
+          "name": "VerifiedUserAttributes"
+        },
+        {
+          "name": "VerifyEmailPayload"
+        },
+        {
+          "name": "VideoBlock"
+        },
+        {
+          "name": "WarrantyClaim"
+        },
+        {
+          "name": "WarrantyClaimLineItem"
+        },
+        {
+          "name": "WarrantyClaimLineItemAttributes"
+        },
+        {
+          "name": "WarrantyClaimShippingAttributes"
+        },
+        {
+          "name": "ZipCodeRestriction"
+        }
+      ]
+    }
+  }
+}

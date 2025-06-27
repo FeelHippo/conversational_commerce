@@ -15,11 +15,11 @@ export class OpenAIAgent {
                 content:
                     `You are a helpful assistant.
                      Help find the status of the order.
-                     Order has a number,
-                     tracking number,
-                     estimated delivery date,
-                     tracking link and aggregated status.
-                     The user is identified by their email.`,
+                     Order has a mandatory number,
+                     a tracking number,
+                     an estimated delivery date,
+                     a tracking link and aggregated status.
+                     The user is identified by their mandatory email.`,
             };
         this.tools = [
             {
@@ -36,18 +36,6 @@ export class OpenAIAgent {
                             email: {
                                 type: 'string',
                             },
-                            estimatedDeliveryDate: {
-                                type: 'string',
-                            },
-                            aggregatedStatus: {
-                                type: 'string',
-                            },
-                            trackingLink: {
-                                type: 'string',
-                            },
-                            trackingNumber: {
-                                type: 'string',
-                            },
                         },
                         required: ['orderNumber', 'email'],
                     },
@@ -59,10 +47,6 @@ export class OpenAIAgent {
     queryOrder = async (
         orderNumber,
         email,
-        estimatedDeliveryDate,
-        aggregatedStatus,
-        trackingLink,
-        trackingNumber,
     ) => {
         // https://www.ibm.com/docs/en/api-connect-graphql/1.1.x?topic=basics-making-graphql-queries-fetch-api
         const response = await fetch(
@@ -75,18 +59,25 @@ export class OpenAIAgent {
                 },
                 body: JSON.stringify({
                     query: `
-                        query ($orderNumber: String!, $email: String!) {
-                          findOneOrder(orderNumber: $orderNumber, email: $email) {
-                            estimatedDeliveryDate
-                          }
+                        query orderById($email: String!, $orderNumber: String!) {
+                            order(email: $email, orderNumber: $orderNumber) {
+                                estimatedDeliveryDate
+                                aggregatedStatus
+                                trackingLink
+                                trackingNumber
+                            }
                         }
                     `,
-                    variables: { 'orderNumber': orderNumber, 'email': email, }
+                    variables: { 'email': email, 'orderNumber': orderNumber  }
                 })
             }
         );
-        console.log('~~~ res', response);
-        return response.data;
+        const body = await response.json();
+        return Object
+            .entries(body.data.order)
+            .reduce(
+                (result, current) => result += `${current[0]}: ${current[1]}, `, ''
+            );
     }
 
     query = async (userInput) => {
@@ -94,8 +85,8 @@ export class OpenAIAgent {
             this.systemMessage,
             ...userInput.map(
                 (userMessage) => ({
-                    role: 'user',
-                    content: userMessage,
+                        role: 'user',
+                        content: userMessage,
                     })
             ),
         ];
@@ -106,7 +97,26 @@ export class OpenAIAgent {
             tools: this.tools,
         });
 
-        const { message } = response.choices[0];
+        const { finish_reason, message } = response.choices[0];
+
+        if (finish_reason === "tool_calls" && message.tool_calls) {
+            const functionArgs = JSON.parse(message.tool_calls[0].function.arguments);
+            const functionArgsArr = Object.values(functionArgs);
+            const functionResponse = await this.queryOrder.apply(null, functionArgsArr);
+
+            const response = await openai.chat.completions.create({
+                model: 'gpt-4',
+                messages: [
+                    ...queryMessages,
+                    {
+                        role: 'system',
+                        content: functionResponse,
+                    }
+                ],
+            });
+
+            return response.choices[0].message.content;
+        }
 
         return message.content;
 
